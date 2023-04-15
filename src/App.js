@@ -1,12 +1,17 @@
 import React from "react"; 
-import Services from "./components/Services";
+import Team from "./components/Team";
+import Help from "./components/Help";
+import { Routes, Route } from "react-router-dom"
 import './App.css';
  
 
 function App() {
    return (
-    <div>
-     <Services />
+    <div className="App">
+     <Routes>
+     <Route path='/help' element={<Help/>}/>
+     <Route path='/team' element={<Team/>}/> 
+     </Routes>
     </div>
    )
  
